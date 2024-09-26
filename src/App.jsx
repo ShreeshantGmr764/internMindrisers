@@ -5,6 +5,9 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './assets/pages/Home'
 import GettingStarted from './assets/pages/GettingStarted'
+import Compiler from './assets/components/Compiler'
+import Login from './assets/components/Login'
+import Signup from './assets/components/Signup'
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/gettingStarted' element={<GettingStarted/>} />
+      <Route path='/compiler' element={<Compiler/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
       </Routes>
     </>
   )
